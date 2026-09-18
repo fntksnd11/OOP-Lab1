@@ -6,8 +6,8 @@
 
 Application::Application(HINSTANCE hInstance)
     : m_hInstance(hInstance), m_hWnd(nullptr) {
-    wcscpy_s(m_status1, L"Результат Робота1: Не виконано");
-    wcscpy_s(m_status2, L"Результат Робота2: Не виконано");
+    wcscpy_s(m_status1, L"ГђГҐГ§ГіГ«ГјГІГ ГІ ГђГ®ГЎГ®ГІГ 1: ГЌГҐ ГўГЁГЄГ®Г­Г Г­Г®");
+    wcscpy_s(m_status2, L"ГђГҐГ§ГіГ«ГјГІГ ГІ ГђГ®ГЎГ®ГІГ 2: ГЌГҐ ГўГЁГЄГ®Г­Г Г­Г®");
 }
 
 bool Application::Initialize() {
@@ -21,7 +21,7 @@ bool Application::Initialize() {
 
     if (!RegisterClassEx(&wcex)) return false;
 
-    m_hWnd = CreateWindow(L"OOP_WinAppClass", L"ООП Лабораторна 1", WS_OVERLAPPEDWINDOW,
+    m_hWnd = CreateWindow(L"OOP_WinAppClass", L"ГЋГЋГЏ Г‹Г ГЎГ®Г°Г ГІГ®Г°Г­Г  1", WS_OVERLAPPEDWINDOW,
         CW_USEDEFAULT, 0, 400, 300, nullptr, nullptr, m_hInstance, this);
 
     if (!m_hWnd) return false;
@@ -59,23 +59,23 @@ LRESULT CALLBACK Application::WindowProc(HWND hWnd, UINT msg, WPARAM wp, LPARAM 
 }
 
 void Application::OnCommand(WORD id) {
-    // Використання поліморфізму через розумні вказівники (std::unique_ptr)
+   
     std::unique_ptr<DialogWindow> dialog;
 
     if (id == IDM_WORK1) {
         ScrollDialog scrollDlg(m_hWnd);
         if (scrollDlg.Execute()) {
-            swprintf_s(m_status1, L"Вибране число (B1): %d", scrollDlg.GetValue());
+            swprintf_s(m_status1, L"Г‚ГЁГЎГ°Г Г­ГҐ Г·ГЁГ±Г«Г® (B1): %d", scrollDlg.GetValue());
         }
         InvalidateRect(m_hWnd, NULL, TRUE);
     }
     else if (id == IDM_WORK2) {
-        dialog = std::make_unique<WizardDialog>(m_hWnd); // Поліморфний об'єкт
+        dialog = std::make_unique<WizardDialog>(m_hWnd); 
         if (dialog->Execute()) {
-            wcscpy_s(m_status2, L"Робота2 успішно завершена");
+            wcscpy_s(m_status2, L"ГђГ®ГЎГ®ГІГ 2 ГіГ±ГЇВіГёГ­Г® Г§Г ГўГҐГ°ГёГҐГ­Г ");
         }
         else {
-            wcscpy_s(m_status2, L"Робота2 скасована");
+            wcscpy_s(m_status2, L"ГђГ®ГЎГ®ГІГ 2 Г±ГЄГ Г±Г®ГўГ Г­Г ");
         }
         InvalidateRect(m_hWnd, NULL, TRUE);
     }
