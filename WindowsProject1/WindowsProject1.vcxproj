@@ -126,13 +126,15 @@
     <ClInclude Include="Application.h" />
     <ClInclude Include="DialogWindow.h" />
     <ClInclude Include="ScrollDialog.h" />
-    <ClInclude Include="WizardDialog.h" />
+    <ClInclude Include="WizardStep1Dialog.h" />
+    <ClInclude Include="WizardStep2Dialog.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Application.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="ScrollDialog.cpp" />
-    <ClCompile Include="WizardDialog.cpp" />
+    <ClCompile Include="WizardStep1Dialog.cpp" />
+    <ClCompile Include="WizardStep2Dialog.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="WindowsProject1.rc" />

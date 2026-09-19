@@ -67,3 +67,16 @@ vcpkg_installed/
 # test output & cache
 Testing/
 .cache/
+
+.vs/
+x64/
+Debug/
+Release/
+WindowsProject1/x64/
+WindowsProject1/Debug/
+*.obj
+*.pdb
+*.tlog
+*.ilk
+*.log
+*.idb

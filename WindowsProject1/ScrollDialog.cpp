@@ -7,7 +7,7 @@ ScrollDialog::ScrollDialog(HWND hParent)
 }
 
 INT_PTR CALLBACK ScrollDialog::DlgProc(HWND hDlg, UINT message, WPARAM wParam, LPARAM lParam) {
-    // ќтримуЇмо вказ≥вник на поточний об'Їкт класу через lParam
+   
     ScrollDialog* pThis = reinterpret_cast<ScrollDialog*>(GetWindowLongPtr(hDlg, DWLP_USER));
 
     switch (message) {
@@ -66,7 +66,7 @@ bool ScrollDialog::Execute() {
         MAKEINTRESOURCE(IDD_DIALOG_SCROLL),
         m_hWndParent,
         ScrollDialog::DlgProc,
-        reinterpret_cast<LPARAM>(this) // ѕередаЇмо 'this' у WM_INITDIALOG
+        reinterpret_cast<LPARAM>(this) 
     );
     return (result == IDOK);
 }   

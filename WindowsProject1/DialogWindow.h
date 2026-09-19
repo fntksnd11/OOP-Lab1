@@ -9,6 +9,6 @@ public:
     DialogWindow(HWND hParent) : m_hWndParent(hParent) {}
     virtual ~DialogWindow() = default;
 
-    // „исто в≥ртуальний метод Ч робить клас абстрактним (≤нтерфейсом)
+ 
     virtual bool Execute() = 0;
 };

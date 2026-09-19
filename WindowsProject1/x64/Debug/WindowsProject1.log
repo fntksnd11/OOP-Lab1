@@ -1,8 +1,1 @@
-﻿  Application.cpp
-  main.cpp
-D:\OOP2\WindowsProject1\WindowsProject1\Application.cpp(88,43): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
-D:\OOP2\WindowsProject1\WindowsProject1\Application.cpp(89,43): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
-  ScrollDialog.cpp
-  WizardDialog.cpp
-  Generating Code...
-  WindowsProject1.vcxproj -> D:\OOP2\WindowsProject1\x64\Debug\WindowsProject1.exe
+﻿  WindowsProject1.vcxproj -> D:\OOP2\WindowsProject1\x64\Debug\WindowsProject1.exe

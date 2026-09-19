@@ -25,7 +25,7 @@ bool WizardDialog::Execute() {
         if (res1 != IDC_BTN_NEXT) return false;
 
         INT_PTR res2 = DialogBox(hInst, MAKEINTRESOURCE(IDD_DIALOG_STEP2), m_hWndParent, Step2Proc);
-        if (res2 == IDC_BTN_BACK) continue; // Повертаємося на крок 1
+        if (res2 == IDC_BTN_BACK) continue; 
         return (res2 == IDOK);
     }
 }
