@@ -7,7 +7,6 @@ ScrollDialog::ScrollDialog(HWND hParent)
 }
 
 INT_PTR CALLBACK ScrollDialog::DlgProc(HWND hDlg, UINT message, WPARAM wParam, LPARAM lParam) {
-   
     ScrollDialog* pThis = reinterpret_cast<ScrollDialog*>(GetWindowLongPtr(hDlg, DWLP_USER));
 
     switch (message) {
@@ -28,7 +27,6 @@ INT_PTR CALLBACK ScrollDialog::DlgProc(HWND hDlg, UINT message, WPARAM wParam, L
         if (!pThis) return FALSE;
         HWND hScroll = reinterpret_cast<HWND>(lParam);
         int pos = GetScrollPos(hScroll, SB_CTL);
-
         switch (LOWORD(wParam)) {
         case SB_LINELEFT:      pos = max(1, pos - 1); break;
         case SB_LINERIGHT:     pos = min(100, pos + 1); break;
@@ -37,7 +35,6 @@ INT_PTR CALLBACK ScrollDialog::DlgProc(HWND hDlg, UINT message, WPARAM wParam, L
         case SB_THUMBPOSITION:
         case SB_THUMBTRACK:    pos = HIWORD(wParam); break;
         }
-
         SetScrollPos(hScroll, SB_CTL, pos, TRUE);
         pThis->m_selectedValue = pos;
 
@@ -66,7 +63,7 @@ bool ScrollDialog::Execute() {
         MAKEINTRESOURCE(IDD_DIALOG_SCROLL),
         m_hWndParent,
         ScrollDialog::DlgProc,
-        reinterpret_cast<LPARAM>(this) 
+        reinterpret_cast<LPARAM>(this)
     );
     return (result == IDOK);
-}   
+}

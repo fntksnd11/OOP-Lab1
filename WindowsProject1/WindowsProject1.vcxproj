@@ -125,14 +125,27 @@
   <ItemGroup>
     <ClInclude Include="Application.h" />
     <ClInclude Include="DialogWindow.h" />
+    <ClInclude Include="EllipseShape.h" />
+    <ClInclude Include="LineShape.h" />
+    <ClInclude Include="PointShape.h" />
+    <ClInclude Include="RectShape.h" />
+    <ClInclude Include="resource.h" />
     <ClInclude Include="ScrollDialog.h" />
+    <ClInclude Include="Shape.h" />
+    <ClInclude Include="ShapeEditor.h" />
     <ClInclude Include="WizardStep1Dialog.h" />
     <ClInclude Include="WizardStep2Dialog.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Application.cpp" />
+    <ClCompile Include="EllipseShape.cpp" />
+    <ClCompile Include="LineShape.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="PointShape.cpp" />
+    <ClCompile Include="RectShape.cpp" />
     <ClCompile Include="ScrollDialog.cpp" />
+    <ClCompile Include="Shape.cpp" />
+    <ClCompile Include="ShapeEditor.cpp" />
     <ClCompile Include="WizardStep1Dialog.cpp" />
     <ClCompile Include="WizardStep2Dialog.cpp" />
   </ItemGroup>

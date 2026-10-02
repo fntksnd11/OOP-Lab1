@@ -1,1 +1,13 @@
-﻿  WindowsProject1.vcxproj -> D:\OOP2\WindowsProject1\x64\Debug\WindowsProject1.exe
+﻿  Application.cpp
+  EllipseShape.cpp
+  LineShape.cpp
+  main.cpp
+  PointShape.cpp
+  RectShape.cpp
+  ScrollDialog.cpp
+  Shape.cpp
+  ShapeEditor.cpp
+  WizardStep1Dialog.cpp
+  WizardStep2Dialog.cpp
+  Generating Code...
+  WindowsProject1.vcxproj -> D:\OOP2\Lab2\x64\Debug\WindowsProject1.exe

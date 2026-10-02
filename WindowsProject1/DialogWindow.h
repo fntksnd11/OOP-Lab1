@@ -8,7 +8,5 @@ protected:
 public:
     DialogWindow(HWND hParent) : m_hWndParent(hParent) {}
     virtual ~DialogWindow() = default;
-
- 
     virtual bool Execute() = 0;
 };

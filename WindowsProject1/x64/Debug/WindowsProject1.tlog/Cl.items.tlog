@@ -1,5 +1,11 @@
-D:\OOP2\WindowsProject1\WindowsProject1\Application.cpp;D:\OOP2\WindowsProject1\WindowsProject1\x64\Debug\Application.obj
-D:\OOP2\WindowsProject1\WindowsProject1\main.cpp;D:\OOP2\WindowsProject1\WindowsProject1\x64\Debug\main.obj
-D:\OOP2\WindowsProject1\WindowsProject1\ScrollDialog.cpp;D:\OOP2\WindowsProject1\WindowsProject1\x64\Debug\ScrollDialog.obj
-D:\OOP2\WindowsProject1\WindowsProject1\WizardStep1Dialog.cpp;D:\OOP2\WindowsProject1\WindowsProject1\x64\Debug\WizardStep1Dialog.obj
-D:\OOP2\WindowsProject1\WindowsProject1\WizardStep2Dialog.cpp;D:\OOP2\WindowsProject1\WindowsProject1\x64\Debug\WizardStep2Dialog.obj
+D:\OOP2\Lab2\WindowsProject1\Application.cpp;D:\OOP2\Lab2\WindowsProject1\x64\Debug\Application.obj
+D:\OOP2\Lab2\WindowsProject1\EllipseShape.cpp;D:\OOP2\Lab2\WindowsProject1\x64\Debug\EllipseShape.obj
+D:\OOP2\Lab2\WindowsProject1\LineShape.cpp;D:\OOP2\Lab2\WindowsProject1\x64\Debug\LineShape.obj
+D:\OOP2\Lab2\WindowsProject1\main.cpp;D:\OOP2\Lab2\WindowsProject1\x64\Debug\main.obj
+D:\OOP2\Lab2\WindowsProject1\PointShape.cpp;D:\OOP2\Lab2\WindowsProject1\x64\Debug\PointShape.obj
+D:\OOP2\Lab2\WindowsProject1\RectShape.cpp;D:\OOP2\Lab2\WindowsProject1\x64\Debug\RectShape.obj
+D:\OOP2\Lab2\WindowsProject1\ScrollDialog.cpp;D:\OOP2\Lab2\WindowsProject1\x64\Debug\ScrollDialog.obj
+D:\OOP2\Lab2\WindowsProject1\Shape.cpp;D:\OOP2\Lab2\WindowsProject1\x64\Debug\Shape.obj
+D:\OOP2\Lab2\WindowsProject1\ShapeEditor.cpp;D:\OOP2\Lab2\WindowsProject1\x64\Debug\ShapeEditor.obj
+D:\OOP2\Lab2\WindowsProject1\WizardStep1Dialog.cpp;D:\OOP2\Lab2\WindowsProject1\x64\Debug\WizardStep1Dialog.obj
+D:\OOP2\Lab2\WindowsProject1\WizardStep2Dialog.cpp;D:\OOP2\Lab2\WindowsProject1\x64\Debug\WizardStep2Dialog.obj
