@@ -1,0 +1,7 @@
+Lab5Shapes 1
+Point 120 90 120 90
+Line 200 80 380 160
+Rect 520 200 580 250
+Ellipse 150 250 320 360
+LineCircles 400 320 600 420
+Cube 650 100 800 230

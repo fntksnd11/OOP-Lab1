@@ -1,0 +1,18 @@
+﻿#include "PointShape.h"
+
+void PointShape::Show(HDC hdc) {
+    HPEN hOldPen = (HPEN)SelectObject(hdc, GetStockObject(BLACK_PEN));
+    HBRUSH hOldBrush = (HBRUSH)SelectObject(hdc, GetStockObject(BLACK_BRUSH));
+
+    Ellipse(hdc, xs1 - 2, ys1 - 2, xs1 + 3, ys1 + 3);
+
+    SelectObject(hdc, hOldPen);
+    SelectObject(hdc, hOldBrush);
+}
+
+void PointShape::Trace(HDC) {
+}
+
+void PointShape::Highlight(HDC hdc) {
+    Ellipse(hdc, xs1 - 6, ys1 - 6, xs1 + 7, ys1 + 7);
+}
